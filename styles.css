@@ -73,10 +73,10 @@ body {
 
 /* Header Start */
 
-.logo{
+/*.logo{
     width: 180px;
     height: 100px;
-}
+}*/
 
 
 #header {
@@ -84,7 +84,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
-    background: #747f61;
+    background: #5a5d3f;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
@@ -112,7 +112,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #b0b0b0;
     transition: 0.3s ease;
 }
 
@@ -145,7 +145,7 @@ body {
 
 
 #hero {
-    background-image: url("img/hero2.png");
+    background-image: url("img/hero5.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -157,18 +157,30 @@ body {
     justify-content: center;
 }
 
-#hero h4{
+#hero p{
+    color: #e7e5d8;
+    font-family: '29LT RIWAYA';
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* #hero h4{
     padding-bottom: 15px;
+    color: #f2eadf;
+} */
+
+#hero h2{
+    color: #fefefe;
 }
 
 #hero h1{
-    color: #3e2f06;
+    color: #d3b07a;
 }
 
 #hero button {
     background-image: url("https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/button.png");
     background-color: transparent;
-    color: #3e2f06;
+    color: #333;
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
@@ -290,7 +302,7 @@ body {
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
-    color: #088178;
+    color: #1a1a1a;
 }
 
 #product1 .pro .cart{
@@ -299,7 +311,7 @@ body {
     line-height: 40px;
     border-radius: 50px;
     background-color: #e8f6ea;
-    color: #088178;
+    color: #1a1a1a;
     border: 1px solid #cce7d0; 
     position: absolute;
     bottom: 20px;
@@ -438,7 +450,7 @@ body {
     background-image: url("https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/banner/b14.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%;
-    background-color: #041e42;
+    background-color: #5a5d3f;
 }
 
 #newsletter h4 {

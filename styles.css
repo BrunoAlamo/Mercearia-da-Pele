@@ -73,23 +73,42 @@ body {
 
 /* Header Start */
 
-/*.logo{
-    width: 180px;
-    height: 100px;
-}*/
+.logo{
+    width: 200px;
+    height: 140px;
+}
 
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* camada escura */
+    z-index: 1;
+  }
+  
+  #header * {
+    position: relative;
+    z-index: 2;
+  }
 
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
-    background: #5a5d3f;
+    /* background: #626f31; */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
+    background-image: url('img/header2.jpeg');
+    background-size: cover;        /* cobre toda a área */
+    background-repeat: no-repeat;  /* evita repetição */
+    background-position: center;   /* centraliza a imagem */
+    height: 100px;                 /* defina altura, se necessário */
 }
 
 #navbar {
@@ -110,9 +129,9 @@ body {
 
 #navbar li a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
-    color: #b0b0b0;
+    color: #D6C9A3;
     transition: 0.3s ease;
 }
 
@@ -145,7 +164,7 @@ body {
 
 
 #hero {
-    background-image: url("img/hero5.png");
+    background-image: url("img/hero6.jpeg");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -158,10 +177,11 @@ body {
 }
 
 #hero p{
-    color: #e7e5d8;
+    color: #F8F8F2;
     font-family: '29LT RIWAYA';
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
+    margin-top: 3px;
 }
 
 /* #hero h4{
@@ -170,17 +190,17 @@ body {
 } */
 
 #hero h2{
-    color: #fefefe;
+    color: #F8F8F2;
 }
 
 #hero h1{
-    color: #d3b07a;
+    color: #402e08;
 }
 
 #hero button {
     background-image: url("https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/button.png");
     background-color: transparent;
-    color: #333;
+    color: #2F3A1F;
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
@@ -325,7 +345,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/banner/b2.jpg");
+    background-image: url("img/banner2.jpeg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -344,11 +364,11 @@ body {
 }
 
 #banner h2 span{
-    color: #ef3636;
+    color: #fc7f00;
 }
 
 #banner button:hover {
-     background-color: #088178;
+     background-color: #fc7f00;
      color: #fff;
 }
 
@@ -659,7 +679,263 @@ footer .copyright{
         margin-left: 10px;
     }
 
+/* About Page */
 
+#page-header.about-header{
+    background-image: url("https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/raw/main/img/about/banner.png");
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+/* Contact Page */
+
+.contact-insta{
+    color: #000;
+}
+
+
+
+#page-header.contact-header{
+    background-image: url("img/contacthero.jpeg");
+
+}
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background-color: #fc7f00;
+    color: #fff;
+}
+
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Cart Page */
+
+#cart{
+    overflow-x: auto;
+}
+
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+   width: 50%;
+   margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+   padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
 
 /* Start Media Query */
 
@@ -759,6 +1035,16 @@ footer .copyright{
     #newsletter .form{
         width: 70%;
     }
+
+    /* Contact Page */
+
+    #form-details{
+        padding: 40px;
+    }
+
+    #form-details form {
+        width: 50%;
+    }
 }
 
 @media (max-width: 477px) {
@@ -837,4 +1123,58 @@ footer .copyright{
         margin-left: 10px;
     }
    
+    /* ABOUT PAGE */
+
+    #about-head {
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    /* Contact Page */
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map{
+        width: 100%;
+    }
+
+    #form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Cart Page */
+
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+
+    #subtotal{
+        width: 100%;
+        padding: 20px;
+    }
 }

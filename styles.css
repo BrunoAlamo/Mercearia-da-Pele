@@ -352,8 +352,20 @@ body {
     background-position: center;
 }
 
+.bannerup{
+    padding-bottom: 90px;
+}
+
+.contorno{
+    text-shadow:
+    -0.5px -0.5px 0 #5C4033,
+     0.5px -0.5px 0 #5C4033,
+    -0.5px  0.5px 0 #5C4033,
+     0.5px  0.5px 0 #5C4033;
+}
+
 #banner h4 {
-    color: #fff;
+    color: #FFC94A;
     font-size: 16px;
 }
 
